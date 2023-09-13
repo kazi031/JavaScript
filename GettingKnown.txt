@@ -44,9 +44,34 @@ String:
 typeof("true") = string
 "ALOHA"
 indexof("L") = 1
+"ALOHA".toLowerCase = "aloha"-
 
+"kazi".length
+4
+"ALOHA".includes("HA")
+true
+"ALOHA".startsWith("AL")
+true
+"ALOHA".indexOf("HA")
+3
+"ALOHA".indexOf("LOL")
+-1
+"ALOHA" + "!"
+'ALOHA!'
+"ALOHA".toLowerCase()
+'aloha'
 
+String Exercise:
 
-
+document.querySelector("#p1-name").append(" Raiyan")
+document.title.indexOf("T")
+9
+document.title.includes("JavaScripT")
+true
+document.title.includes("JavaScript")
+false
+document.querySelector ("header h1").textContent.toUpperCase()
+document.querySelector ("header h1").textContent = document.querySelector ("header h1").textContent.toUpperCase() 
+or document.querySelector("header h1").style.textTransform = "uppercase"
   
  
