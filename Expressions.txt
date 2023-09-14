@@ -29,3 +29,5 @@ myUnchageableVariable = "Never gonna give you"
 
 ** const variables are constant and they are not changeable
 ** but the let variable are changeable and can be changed anytime in the code.
+** var ?? 
+** no keyword
