@@ -31,3 +31,35 @@ myUnchageableVariable = "Never gonna give you"
 ** but the let variable are changeable and can be changed anytime in the code.
 ** var ?? 
 ** no keyword
+
+** The reason why let keyword was introduced to the language was function scope is confusing and was one of the main sources of bugs in JavaScript.
+
+function run() {
+  var foo = "Foo";
+  let bar = "Bar";
+
+  console.log(foo, bar); // Foo Bar
+
+  {
+    var moo = "Mooo"
+    let baz = "Bazz";   
+    kaz = "XD"
+    console.log(moo, baz, kaz); // Mooo Bazz
+  }
+
+  console.log(moo); // Mooo
+  console.log(kaz);
+  console.log(baz); // ReferenceError
+  
+}
+
+run();
+VM11331:5 Foo Bar
+VM11331:11 Mooo Bazz XD
+VM11331:14 Mooo
+VM11331:15 XD
+VM11331:16 Uncaught ReferenceError: baz is not defined
+    at run (<anonymous>:16:15)
+    at <anonymous>:20:1
+
+// Not giving any keywords works like var.
