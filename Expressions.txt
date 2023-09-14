@@ -1,0 +1,31 @@
+typeof("value")
+'string'
+5 < 4
+false
+1 == 1
+true
+"1" == 1
+true
+"FrontendMasters".includes("Front" + "end") 
+true
+let remember = "Sept. 21";
+undefined
+remember
+'Sept. 21'
+ typeof(remember)
+'string'
+let myDeclaredVariable;
+undefined
+myDeclaredVariable = "This is Kazi"
+'This is Kazi'
+typeof(myDeclaredVariable)
+'string'
+const myUnchageableVariable = "Never gonna give you up"
+undefined
+typeof(myDeclaredVariable)
+'string'
+myUnchageableVariable = "Never gonna give you"
+
+
+** const variables are constant and they are not changeable
+** but the let variable are changeable and can be changed anytime in the code.
