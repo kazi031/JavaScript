@@ -1,0 +1,74 @@
+const js = {
+    name: "JavaScript",
+    abbreviation: "JS",
+    isAwesome: true,
+    officialSpec: "ECMAScript",
+    birthYear: 1995,
+    creator: "Brendan Eich"
+};
+undefined
+js.name
+'JavaScript'
+js.isAwesome
+true
+js
+{name: 'JavaScript', abbreviation: 'JS', isAwesome: true, officialSpec: 'ECMAScript', birthYear: 1995, …}abbreviation: "JS"birthYear: 1995creator: "Brendan Eich"isAwesome: truename: "JavaScript"officialSpec: "ECMAScript"[[Prototype]]: Object
+let age = 2022 - js.birthYear;
+undefined
+age
+27
+const indecisive = {
+    lunch: "sandwich"
+};
+
+undefined
+indecisive.lunch
+'sandwich'
+indecisive.lunch = "tacos";
+
+'tacos'
+indecisive.lunch
+'tacos'
+indecisive.snack = "chips";
+'chips'
+indecisive
+{lunch: 'tacos', snack: 'chips'}
+indecisive["lunch"]
+'tacos'
+
+
+
+const Kazi = {
+    name: "kazi",
+    home: "Dhaka",
+    languages: ["Bengali", "English", "Japanese"],
+    pet: null,
+    vehicle: "Bycycle",
+    hobbies: ["travel", "sports", "history"]
+};
+
+Kazi.speak = function () {
+    console.log("Hi my name is", this.name);
+}
+Kazi.speak();
+VM11712:2 Hi my name is kazi
+
+
+
+Kazi
+{name: 'kazi', home: 'Dhaka', languages: Array(3), pet: null, vehicle: 'Bycycle', …}
+
+
+
+const dog = {
+    name: "Ein",
+    breed: "Corgi",
+    speak: function () {
+        console.log("woof woof");
+    }
+}
+dog.speak();
+
+
+// Nested Objects
+
