@@ -1,0 +1,86 @@
+** Mutable vs Immutable
+
+==>  "Mutable" data can be edited (e.g. Arrays)
+==>  "Immutable" data always stays the same (e.g. strings & other primitives)
+
+** using immutable data and variables is usually best
+
+** some actions "mutate" an array in place such as:
+==> oldArray.push(NewValue)
+
+** other actions do not mutate the original array, but instead create a new copy (oldArray.concat(otherArray))
+	==> let numbers2 = [1, 2, 3]
+		undefined
+		let result2 = numbers2.concat([4])
+		undefined
+		result2
+		(4) [1, 2, 3, 4]
+		numbers2
+		(3) [1, 2, 3]
+
+**Strings
+
+let synonyms = ["plethora","array","cornucopia"];
+undefined
+synonyms.length
+3
+synonyms[1]
+'array'
+synonyms.indexOf("cornucopia")
+2
+synonyms.includes("plethora")
+true
+synonyms.includes("varirty")
+false
+let lastItem = synonyms.pop();
+undefined
+lastItem
+'cornucopia'
+synonyms.push("multitude");
+3
+synonyms
+(3) ['plethora', 'array', 'multitude']0: "plethora"1: "array"2: "multitude"length: 3[[Prototype]]: Array(0)
+synonyms[1] = "variety";
+'variety'
+synonyms
+(3) ['plethora', 'variety', 'multitude']
+let mixedArray = ["pop", 6, "squish", false, Document];
+undefined
+mixedArray
+(5) ['pop', 6, 'squish', false, ƒ]0: "pop"1: 62: "squish"3: false4: ƒ Document()arguments: nullcaller: nulllength: 0name: "Document"prototype: Document {…}[[Prototype]]: ƒ Node()[[Scopes]]: Scopes[0]length: 5[[Prototype]]: Array(0)
+["c", "a", "d", "b"].sort()
+(4) ['a', 'b', 'c', 'd']0: "a"1: "b"2: "c"3: "d"length: 4[[Prototype]]: Array(0)
+["lions","tigers","bears oh my!"].join(" & ")
+'lions & tigers & bears oh my!'
+[1, 2, 3].concat([4, 5, 6])
+(6) [1, 2, 3, 4, 5, 6]
+[100, 2, 50].sort()
+(3) [100, 2, 50]
+s1 = "abc"
+'abc'
+s1[1] = 'c'
+'c'
+s1
+'abc'
+
+// Array
+
+
+let array1 = [1, 2, 3, 4]
+undefined
+let array2 = array1
+undefined
+array2
+(4) [1, 2, 3, 4]
+array1[2] = 99
+99
+array1
+(4) [1, 2, 99, 4]
+array2
+(4) [1, 2, 99, 4]
+array2[2] = 100
+100
+array2
+(4) [1, 2, 100, 4]
+array1
+(4) [1, 2, 100, 4]
