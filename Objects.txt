@@ -72,3 +72,7 @@ dog.speak();
 
 // Nested Objects
 
+Math.PI
+3.141592653589793
+Math.random()
+0.3411149193564882
