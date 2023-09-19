@@ -1,0 +1,76 @@
+function getRandomNumber() {
+    return Math.random();
+}
+getRandomNumber();
+
+
+function add(x, y) {
+    return x + y;
+}
+add(2,3);
+
+//
+
+function add3(x, y, z) {
+    console.log("My parameters are named x, y, z");
+    console.log("I received the arguments", x, y, z);
+    return x + y + z;
+}
+
+undefined
+const sum = add3(4,5,6);
+VM91:2 My parameters are named x, y, z
+VM91:3 I received the arguments 4 5 6
+
+sum => 15
+
+
+// annonymous functions
+
+const yell = function (saying) {
+    return saying.toUpperCase();
+}
+undefined
+yell("hello")
+'HELLO'
+
+
+//
+
+const longerThan = function (x , y) {
+    if (x.length > y.length) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+
+undefined
+longerThan([2,3,4],[4,5])
+true
+longerThan([2,3,4],[4,5,6,7])
+false
+
+*********************************************
+const divide = function (n1 , n2) {
+    return n1 / n2;
+}
+undefined
+divide(4,2)
+2
+
+const divide = (x,y) => x / y;
+undefined
+divide(9,3)
+
+*********************************************
+
+
+const whisper = function (s1) {
+    console.log(s1.toLowerCase());
+}
+undefined
+whisper("KAZI")
+VM1718:2 kazi
