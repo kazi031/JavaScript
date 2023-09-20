@@ -138,10 +138,13 @@
 
     for (let button of optionButtons) {
         button.addEventListener("click", (event) => {
-            console.log(button.textContent);
-            if (!isCorrect(button.textContent)){
+            console.log(button.value);
+            // button.textContent Also works
+            if (!isCorrect(button.value)){
+                button.classList.add("incorrect");
                 console.log("The Answer is Wrong")
             } else {
+                button.classList.add("correct");
                 console.log("The Answer is Right")
             }
             explanation.textContent = fact.explanation;

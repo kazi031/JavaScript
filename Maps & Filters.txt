@@ -1,0 +1,58 @@
+const spices = [
+    {name: "Emma", nickname: "Baby"},
+    {name: "Geri", nickname: "Ginger"},
+    {name: "Mel B", nickname: "Scary"},
+    {name: "Mel C", nickname: "Sporty"},
+    {name: "Victoria", nickname: "Posh"}
+];
+const nicknames = spices.map(s => s.nickname + " Spice");
+undefined
+nicknames
+(5) ['Baby Spice', 'Ginger Spice', 'Scary Spice', 'Sporty Spice', 'Posh Spice']
+0
+: 
+"Baby Spice"
+1
+: 
+"Ginger Spice"
+2
+: 
+"Scary Spice"
+3
+: 
+"Sporty Spice"
+4
+: 
+"Posh Spice"
+length
+: 
+5
+[[Prototype]]
+: 
+Array(0)
+const mels = spices.filter(s => s.name.includes("Mel"));
+undefined
+mels
+(2) [{…}, {…}]
+0
+: 
+{name: 'Mel B', nickname: 'Scary'}
+1
+: 
+{name: 'Mel C', nickname: 'Sporty'}
+length
+: 
+2
+[[Prototype]]
+: 
+Array(0)
+
+
+
+const names = spices.map(s => s.name);
+
+
+const endInY = spices.filter(s => s.nickname.endsWith('y'));
+
+
+const endInY = spices.filter(s => s.nickname[s.nickname.length - 1] === 'y');
