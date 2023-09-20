@@ -1,0 +1,7 @@
+const oldBurns = ["square", "wack"];
+const newBurns = ["basic", "dusty", "sus"];
+const burnBook = [...oldBurns, ...newBurns];
+
+Equivalent to
+
+const burnBook = oldBurns.concat(newBurns);
