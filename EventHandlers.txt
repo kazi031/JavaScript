@@ -1,0 +1,26 @@
+let trueButton = optionButtons[0]
+trueButton.addEventListener("click", (event) => 
+    {
+        trueButton.textContent = trueButton.textContent.toUpperCase();
+    }
+                           );
+undefined
+let h1 = document.getElementsByTagName("h1")
+undefined
+h1
+HTMLCollection [h1]0: h1length: 1[[Prototype]]: HTMLCollection
+let h1_tag = h1[0]
+undefined
+h1_tag
+<h1>​Quiz.js​</h1>​
+h1_tag.addEventListener("mouseover", () => {
+    h1.textContent = "hovering";
+});
+undefined
+h1_tag.addEventListener("mouseover", () => {
+    h1_tag.textContent = "hovering";
+});
+undefined
+h1_tag.addEventListener("mouseout", () => {
+    h1_tag.textContent = "Quiz.js";
+});

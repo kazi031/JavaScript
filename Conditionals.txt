@@ -1,0 +1,35 @@
+let firstName = "Kazi"
+let lastName = "Raiyan"
+if (firstName.length > lastName.length){
+    console.log("First Name is Longer than Last Name")
+} else if (firstName.length === lastName.length){
+    console.log("First Name is equal Last Name")
+} else {
+    console.log("First Name is shorter than Last Name")
+}
+VM1060:8 First Name is shorter than Last Name
+undefined
+function isEmpty(array) {
+    if (array.length > 0) {
+        console.log("The array is not Empty");
+    } else {
+        console.log("The array is empty");
+    }
+};
+let arr1 = [50,60,70];
+let arr2 = [];
+isEmpty(arr1);
+isEmpty(arr2);
+VM1395:3 The array is not Empty
+VM1395:5 The array is empty
+undefined
+function trueFlase(array) {
+    if(array) {
+        console.log("Empty Array is true");
+    } else {
+        console.log("Empty Array is False");
+    }
+}
+undefined
+trueFlase(arr2);
+VM1609:3 Empty Array is true
