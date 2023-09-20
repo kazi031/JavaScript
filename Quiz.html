@@ -131,11 +131,30 @@
     }
 
     // TODO 6A: Use a for loop to add a click event listener to each of the optionButtons
-            // TODO 6B: Within the event handler function, display the fact's explanation by setting the text of the explanation element
-
-
-            // TODO 7: Within the event handler function, 
+    // TODO 6B: Within the event handler function, display the fact's explanation by setting the text of the explanation element
+    // TODO 7: Within the event handler function, 
             // Use a for loop to disable all the option buttons
+
+
+    for (let button of optionButtons) {
+        button.addEventListener("click", (event) => {
+            console.log(button.textContent);
+            if (!isCorrect(button.textContent)){
+                console.log("The Answer is Wrong")
+            } else {
+                console.log("The Answer is Right")
+            }
+            explanation.textContent = fact.explanation;
+            for (let b2 of optionButtons) {
+                disable(b2);
+            }
+        })
+    }
+
+
+            
+
+            
 
 
             // TODO 8: Within the event handler function,
