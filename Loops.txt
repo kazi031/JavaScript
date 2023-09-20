@@ -1,0 +1,32 @@
+const numbers = [1,2,3];
+for (let n of numbers) {
+    console.log(n);
+}
+
+VM1681:3 1
+VM1681:3 2
+VM1681:3 3
+
+
+for (let rep = 0; rep < 10; rep += 1) {
+    console.log("now doing rep", rep);
+}
+console.log("do you even lift bro");
+
+
+for (let char of "ALOHA") {
+    console.log(char);
+}
+VM1689:2 A
+VM1689:2 L
+VM1689:2 O
+VM1689:2 H
+VM1689:2 A
+
+
+for (let item of ["pop", 6, "squish"]) {
+    console.log(typeof item);
+}
+VM1693:2 string
+VM1693:2 number
+VM1693:2 string
