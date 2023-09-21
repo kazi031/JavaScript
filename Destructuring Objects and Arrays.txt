@@ -1,0 +1,30 @@
+let [,,thirty] = [10,20,30,40];
+undefined
+thirty
+30
+
+let {title} = document
+undefined
+title
+'Doggo Fetch'
+
+
+spices = [
+    {
+        name: "kazi",
+        nickname: "Raiyan"
+    },
+];
+let {name} = spices[0]
+undefined
+name
+'kazi'
+
+
+
+let [uno, ...otros] = [1,2,3,4]
+undefined
+uno
+1
+otros
+(3) [2, 3, 4]

@@ -115,7 +115,14 @@
     function getBreedFromURL(url) {
         // The string method .split(char) may come in handy
         // Try to use destructuring as much as you can
-        
+        let [,,,,dog_breed,] = url.split("/");
+        //console.log(dog_breed); 
+        if(dog_breed.includes("-")){
+            let [ln,fn] = dog_breed.split("-");
+            //dog_breed = fn + " " + ln;
+            dog_breed = [fn,ln].join(" ");
+        }
+        return dog_breed;
     }
 
 
