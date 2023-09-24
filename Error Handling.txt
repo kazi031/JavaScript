@@ -1,0 +1,7 @@
+try {
+    thisMightThrowAnError();
+} catch (error) {
+    console.error("As if! Error:", error); 
+    console.log("Whatever, let's press on anyway");
+}
+console.log("still rollin' with the homies");
