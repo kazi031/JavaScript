@@ -1,0 +1,18 @@
+One difference is that we can't use await outside of a function in a script
+JS modules work differently from JS scripts
+<script type="module">
+    //...
+</script>
+
+import && export:
+
+export lets us expose variables from our module's scope to the outside world
+// myModule.js
+const veryUsefulFunction = () => "I came from a module";
+export { veryUsefulFunction };
+
+
+import lets us use an exposed variable from another module
+// otherModule.js
+import { veryUsefulFunction } from './myModule.js'
+veryUsefulFunction();
